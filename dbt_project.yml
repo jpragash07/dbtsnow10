@@ -36,7 +36,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   jp_dbt_project:         
-    # Applies to all files under models/example/
     dim:
       +schema: dim
     fct:

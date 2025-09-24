@@ -3,7 +3,8 @@
         materialized='incremental',
         unique_key='EMPLOYEE_ID',
 	incremental_strategy = 'delete+insert',
-	tags = ['dim']
+	tags = ['dim'],
+     schema = 'dim'
     )
 }}
 select EMPLOYEE_ID,

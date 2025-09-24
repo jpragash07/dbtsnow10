@@ -1,7 +1,8 @@
 {{
     config(
         materialized='view',
-        tags =['stg']
+        tags =['stg'],
+        schema = 'stg'
     )
 }}
 select EMPLOYEE_ID,
